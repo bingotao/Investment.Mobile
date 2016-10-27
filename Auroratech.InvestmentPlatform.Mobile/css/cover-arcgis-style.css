@@ -1,0 +1,268 @@
+.esriBasemapGallery {
+    z-index: 2;
+    background-color: rgba(0, 172, 237, 0.9);
+    padding: 10px 10px 0 10px;
+    border-radius: 5px;
+}
+
+.esriBasemapGalleryLabelContainer {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    color: #222;
+    font-weight: 700;
+    font-size: 14px;
+    top: -2px;
+    color: white;
+}
+
+.esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 20px 0px;
+}
+
+.esriBasemapGalleryThumbnail {
+    border: 0 rgba(0,0,0,0) solid;
+    transition: 0.8s box-shadow ease, 0.8s border-color ease;
+    border-radius: 3px;
+}
+
+path[flash-clear="2000"] {
+    animation-duration: 2s;
+    animation-name: flash-clear;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+path[flash-clear="3000"] {
+    animation-duration: 3s;
+    animation-name: flash-clear;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+path[flash-remain="2000"] {
+    animation-duration: 2s;
+    animation-name: flash-remain;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+path[flash-remain="3000"] {
+    animation-duration: 3s;
+    animation-name: flash-remain;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flash-remain {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes flash-remain {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flash-remain {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash-clear {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes flash-clear {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash-clear {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.esriScalebarLabel {
+    color: white;
+}
+
+.esriScalebarLine {
+    border-color: white;
+}
+
+.esriScalebar {
+    height: 30px;
+    width: auto;
+    padding: 20px 60px 15px 20px;
+    background-color: rgba(120, 120, 120,0.7);
+    border-radius: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.esriPopup .titleButton.maximize {
+    display: none;
+}
+
+.esriPopup .titlePane {
+    font-size: 16px;
+    background-color: rgba(0, 172, 237, 0.9);
+    height: 30px;
+    line-height: 30px;
+}
+
+.esriPopup .sizer {
+    width: 450px;
+}
+
+.esriPopup .actionList {
+    display: none;
+}
+
+.esriPopup .titleButton.close {
+    right: 5px;
+    top: 5px;
+}
+
+.esriPopup .sizer.content {
+    /*max-height: 350px;*/
+}
+
+.esriPopup .contentPane {
+    /*max-height: 100%;*/
+    overflow-y: scroll;
+}
+
+
+.esriPopup .title {
+    text-indent: 10px;
+}
+
+.esriPopup .actionsPane {
+    display: none;
+}
+
+.LocateButton .zoomLocateButton {
+    width: 50px;
+    height: 50px;
+}
+
+.esriPopup .pointer.top, .esriPopup .pointer.topLeft, .esriPopup .pointer.topRight {
+    background: rgba(0, 172, 237, 0.9);
+}
+
+.esriScalebarEnglishLine {
+    top: -2px;
+}
+
+/*.esriScalebarLine {
+    border-width: 4px;
+}*/
+
+.esriScalebarLabel {
+    font-size: 16px;
+}
+
+.scalebar_bottom-right.esriScalebar div:first-child .esriScalebarSecondNumber {
+    position: absolute;
+    top: -12px;
+}
+
+.scalebar_bottom-right.esriScalebar div:last-child .esriScalebarSecondNumber {
+    position: absolute;
+    top: 0;
+}
